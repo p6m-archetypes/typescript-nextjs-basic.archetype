@@ -27,4 +27,4 @@ jobs:
         uses: archetect-actions/repository-release@v1
         with:
           release_type: ${{'{'}}{ github.event.inputs.release_type }}
-          github_token: ${{'{'}}{ secrets.GITHUB_TOKEN }
+          github_token: ${{'{'}}{ secrets.GITHUB_TOKEN }}
