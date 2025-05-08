@@ -30,7 +30,7 @@ render(Directory("contents/base"), context);
 
 display();
 
-log(Info, "Copy and paste the following commands to publish your Action:");
+log(Info, "Copy and paste the following commands to publish your project:");
 
 display();
 
