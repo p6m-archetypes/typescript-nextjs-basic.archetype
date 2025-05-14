@@ -8,8 +8,8 @@ on:
 permissions: write-all
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  ARTIFACTORY_TOKEN: ${{ secrets.ARTIFACTORY_TOKEN }}
+  GITHUB_TOKEN: ${{'{'}}{ secrets.GITHUB_TOKEN }}
+  ARTIFACTORY_TOKEN: ${{'{'}}{ secrets.ARTIFACTORY_TOKEN }}
   NODE_OPTIONS: --max_old_space_size=4096
 
 jobs:
@@ -48,16 +48,16 @@ jobs:
           working-directory: front-end-apps
           image-name: p6m/application
           registry: artifactory.example.com
-          registry-username: ${{ github.actor }}
-          registry-password: ${{ secrets.ARTIFACTORY_TOKEN }}
+          registry-username: ${{'{'}}{ github.actor }}
+          registry-password: ${{'{'}}{ secrets.ARTIFACTORY_TOKEN }}
           tags: |
             latest
-            ${{ steps.get_version.outputs.VERSION }}
+            ${{'{'}}{ steps.get_version.outputs.VERSION }}
 
       # Dispatch platform application manifest
       - name: Dispatch platform application manifest
         uses: p6m-actions/platform-application-manifest-dispatch@v1
         with:
           application-name: p6m-application
-          version: ${{ steps.get_version.outputs.VERSION }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          version: ${{'{'}}{ steps.get_version.outputs.VERSION }}
+          token: ${{'{'}}{ secrets.GITHUB_TOKEN }}
