@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         <Link
-          href="https://docs.p6m.dev/"
+          href="https://developer.p6m.dev/"
           className="w-full bg-[#1a1a1a] text-white visited:text-white active:text-white py-3 rounded flex items-center justify-center mb-4 hover:bg-[#2a2a2a] transition-colors gap-x-2"
           target="_blank"
         >
@@ -43,7 +43,7 @@ export default function Home() {
         </Link>
 
         <Link
-          href="https://docs.p6m.dev/"
+          href="https://developer.p6m.dev/"
           className="w-full block bg-[#f5f5f5] text-black py-3 rounded hover:bg-[#e5e5e5] transition-colors text-center"
           target="_blank"
         >
