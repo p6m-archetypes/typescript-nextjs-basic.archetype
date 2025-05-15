@@ -8,7 +8,6 @@ This is a [Next.js](https://nextjs.org) project.
 | ---------------------- | -------------------------------------------- |
 | Install dependencies   | `pnpm install`                               |
 | Run development server | `pnpm dev`                                   |
-| Run dev with open tab  | `pnpm dev -- --open`                         |
 | Build for production   | `pnpm build`                                 |
 | Build with OpenNext    | `pnpm build:open`                            |
 | Lint code              | `pnpm lint`                                  |
