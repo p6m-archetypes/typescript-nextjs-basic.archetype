@@ -53,7 +53,7 @@ export default function Home() {
 
       <div className="flex items-center justify-center space-x-6 mt-auto py-6">
         <Link
-          href="#"
+          href="https://nextjs.org/learn" // Building Next.js project covering foundations
           className="flex items-center text-sm text-gray-400 hover:text-white transition-colors gap-x-2"
           target="_blank"
         >
@@ -67,7 +67,7 @@ export default function Home() {
           Learn
         </Link>
         <Link
-          href="#"
+          href="https://nextjs.org/docs/app/guides" // Specific guides for Next.js (e.g., routing, data fetching, auth)
           className="flex items-center text-sm text-gray-400 hover:text-white transition-colors gap-x-2"
           target="_blank"
         >
